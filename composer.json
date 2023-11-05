@@ -1,6 +1,6 @@
 {
     "name": "bfg/admin-metronic-theme",
-    "description": "Pattern for generating php entities.",
+    "description": "Metronic theme for bfg admin.",
     "type": "bfg-script",
     "keywords": ["bfg", "admin", "metronic", "theme"],
     "homepage": "https://github.com/bfg-s/admin-metronic-theme",
