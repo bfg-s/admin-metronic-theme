@@ -1,0 +1,37 @@
+{
+    "name": "bfg/admin-metronic-theme",
+    "description": "Pattern for generating php entities.",
+    "type": "bfg-script",
+    "keywords": ["bfg", "admin", "metronic", "theme"],
+    "homepage": "https://github.com/bfg-s/admin-metronic-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bfg",
+            "email": "bfg.script@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Bfg\\AdminMetronicTheme\\": "src/"
+        },
+        "files": [
+
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bfg\\AdminMetronicTheme\\ServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}

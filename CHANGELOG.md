@@ -1,0 +1,1 @@
+# ChangelogAll notable changes to this project will be documented in this file.## [0.1.0] - 2023-10-28### Added- License mit.- Readme documentation file.- Initial functionality of the package.
