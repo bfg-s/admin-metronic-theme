@@ -1,26 +1,13 @@
 <div
-    @class(array_merge(['card'], $classes))
+    @class(array_merge(['card card-custom card-stretch gutter-b'], $classes))
     @attributes($attributes)
 >
     @if($title)
-        <div class="card-header">
+        <div class="card-header card-header border-0 mt-4">
 
-            <h3 class="card-title">
+            <h3 class="card-title align-items-start flex-column">
                 {{ $title }}
             </h3>
-
-            <div class="card-tools">
-
-                <button type="button" class="btn btn-tool" data-card-widget="maximize">
-                    <i class="fas fa-expand"></i>
-                </button>
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
         </div>
     @endif
     <div class="card-body" @if($ordered) data-load="admin::model_relation_ordered" data-params="{{ $ordered }}" @endif @if($tpl) data-tpl="{{ $tpl }}" @endif>

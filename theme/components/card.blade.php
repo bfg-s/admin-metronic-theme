@@ -2,7 +2,7 @@
     @class(array_merge(['card card-custom card-stretch gutter-b', "card-{$type}"], $classes))
     @attributes($attributes)
 >
-    <div class="card-header align-items-center border-0 mt-4">
+    <div class="card-header border-0 mt-4">
         @if($headerObj) {!! $headerObj !!} @endif
 
         <h3 class="card-title align-items-start flex-column">
@@ -31,4 +31,8 @@
     @foreach($contents as $content)
         {!! $content !!}
     @endforeach
+
+    @if($footerResult = $footer())
+        {!! $footerResult !!}
+    @endif
 </div>
