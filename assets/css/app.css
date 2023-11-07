@@ -414,3 +414,12 @@
         font-size: 12px;
     }
 }
+
+.navbar-badge {
+    font-size: .8rem;
+    font-weight: 300;
+    padding: 2px 4px;
+    position: absolute;
+    right: 5px;
+    top: -10px !important;
+}
