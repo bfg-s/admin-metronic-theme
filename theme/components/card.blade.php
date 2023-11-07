@@ -5,7 +5,7 @@
     <div class="card-header border-0 mt-4">
         @if($headerObj) {!! $headerObj !!} @endif
 
-        <h3 class="card-title align-items-start flex-column">
+        <h3 class="card-title">
             @if($icon)
                 <i class="{{ $icon }} mr-1"></i>
             @endif

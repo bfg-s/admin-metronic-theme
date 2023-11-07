@@ -5,7 +5,7 @@
     @if($title)
         <div class="card-header card-header border-0 mt-4">
 
-            <h3 class="card-title align-items-start flex-column">
+            <h3 class="card-title">
                 {{ $title }}
             </h3>
         </div>
