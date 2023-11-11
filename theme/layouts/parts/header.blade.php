@@ -38,6 +38,9 @@
                             {!! new ($menu->getLeftNavBarView())(...$menu->getParams()); !!}
                         @endif
                     @endforeach
+                    @foreach(admin_repo()->menuList->where('left_nav_bar_vue') as $menu)
+                        {!! (new ($menu->getLeftNavBarVue()))->attr($menu->getParams()); !!}
+                    @endforeach
                 </ul>
                 <!--end::Header Nav-->
             </div>
@@ -57,6 +60,10 @@
                     @else
                         {!! new ($menu->getNavBarView())(...$menu->getParams()); !!}
                     @endif
+                @endforeach
+
+                @foreach(admin_repo()->menuList->where('nav_bar_vue')->where('prepend', false) as $menu)
+                    {!! (new ($menu->getNavBarVue()))->attr($menu->getParams()); !!}
                 @endforeach
             </span>
 
@@ -104,6 +111,10 @@
                     @else
                         {!! new ($menu->getNavBarView())(...$menu->getParams()); !!}
                     @endif
+                @endforeach
+
+                @foreach(admin_repo()->menuList->where('nav_bar_vue')->where('prepend', true) as $menu)
+                    {!! (new ($menu->getNavBarVue()))->attr($menu->getParams()); !!}
                 @endforeach
             </span>
 
